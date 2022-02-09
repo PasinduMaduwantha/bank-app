@@ -16,8 +16,9 @@ account as well. Thirdly, implement the following two operations on the accounts
 account and add that charge to the bank vault at the end of each day.  If the balance is negative, Rs50.00 will be charged from the customer’s account as
 overdraft charge at the end of the day.  A daily interest of 0.02% will be added to all the customers’ accounts at the beginning of
 the day if the balance is positive. Round the interest value up to 2
-nd decimal place (eg. 0 to
-0.005 rounded to .00 and 0.0051to 0.0099 to 0.01) before adding it to account balance. When the program starts, delete all the customer account files and rewrite them freshly. The UI should give options to view bank vault balance and current balance of all the customer
+
+
+When the program starts, delete all the customer account files and rewrite them freshly. The UI should give options to view bank vault balance and current balance of all the customer
 accounts. User can enter the date and see the starting balance (before applying interest) and end of the
 day balance of any account. Text file description:
 Balance.txt
@@ -25,25 +26,27 @@ Each line contains the account number and balance of the account by 1-1-2021. Th
 Each line contains the date(in yyyymmdd format), customer’s account number, transaction
 type, and transaction amount (up to two decimal places), and they are separated by a comma
 (,). It contains transactions taken place from 1
-st to 11
-th
-January 2021. Transaction types
+st to 11th January 2021. 
+
+Transaction types
 1-deposit
 2-withdraw
+
 Account.txt <created by the programme for each account>
 These accounts should indicate these details
-Date
+  
 Transaction type
 0-opening balance
 1-deposit
 2-withdraw
 3-interest added
 4-charges for lower/negative balance
+  
 Transaction amount
 Balance
 BankAccount.txt
 Following details should be included. Total amount of money in the bank at the beginning of the year. Indicate all the transactions with following details:
-Date
+
 Transaction type
 0-opening balance
 1-deposit
@@ -52,4 +55,4 @@ Transaction type
 4-charges for lower/negative balance
 Transaction amount
 Balance
-No need to add a file header for account.txt files. Columns are separated by a comma (,
+No need to add a file header for account.txt files. Columns are separated by a comma (,)
